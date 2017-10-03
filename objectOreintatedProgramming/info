@@ -1,3 +1,3 @@
 Object oreinted programming folder contains codes for defining class, creating objects, constructors and methods.  
-1. The \src folder uses getters and setters functions without using a constructor.
-2. The \src-constructor folder contains codes using constructors 
+The \src folder uses getters and setters functions without using a constructor.
+
