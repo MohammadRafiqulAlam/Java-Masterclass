@@ -18,31 +18,15 @@ public class Monitor {
         return model;
     }
 
-    public void setModel(String model) {
-        this.model = model;
-    }
-
     public String getManufacturer() {
         return manufacturer;
-    }
-
-    public void setManufacturer(String manufacturer) {
-        this.manufacturer = manufacturer;
     }
 
     public int getSize() {
         return size;
     }
 
-    public void setSize(int size) {
-        this.size = size;
-    }
-
     public Resolution getNativeResolution() {
         return nativeResolution;
-    }
-
-    public void setNativeResolution(Resolution nativeResolution) {
-        this.nativeResolution = nativeResolution;
     }
 }
