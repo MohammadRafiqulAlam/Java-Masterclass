@@ -8,5 +8,6 @@ public class Main {
         // The PC is composed of case, monitor and mother board
         PC thePC =new PC(theCase,monitor,themotherBoard);
         thePC.getMonitor().drawPixelAt(100,200,"Red");
+        thePC.getMotherboard().loadProgram("Windows 7");
     }
 }
