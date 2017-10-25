@@ -24,7 +24,7 @@ public class Surface {
         this.getLength();
     }
     public void surfaceOpening(Opening opening) {
-        System.out.println("Width: "+opening.getWidth()+", Height: " +opening.getHeight()+ " and Made of: " + opening.getMadeOf());
+        opening.printDimensions();
     }
 
 }

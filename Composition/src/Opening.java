@@ -13,23 +13,27 @@ public class Opening {
         this.madeOf = madeOf;
     }
 
-    public int getWidth() {
+    private int getWidth() {
         return width;
     }
 
-    public int getHeight() {
+    private int getHeight() {
         return height;
     }
 
-    public int getParts() {
+    private int getParts() {
         return parts;
     }
 
-    public String getNameOfOpening() {
+    private String getNameOfOpening() {
         return nameOfOpening;
     }
 
-    public String getMadeOf() {
+    private String getMadeOf() {
         return madeOf;
+    }
+
+    public void printDimensions(){
+        System.out.println("Width: "+this.getWidth()+", Height: " +this.getHeight()+ " and Made of: " + this.getMadeOf());
     }
 }
