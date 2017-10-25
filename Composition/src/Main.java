@@ -15,10 +15,32 @@ public class Main {
         // Think about the things that should be included in the room.
         // Maybe physical parts of the house but furniture as well
         // Add at least one method to access an object via a getter and
-        // then that objects public method as you saw in the previous video
+        // then access an object using public method
         // then add at least one method to hide the object e.g. not using a getter
         // but to access the object used in composition within the main class
-        // like you saw in this video.
+        System.out.println("-------------CHALLENGE --------------");
+        //Length of the room
+        Positioning surfacePositioning1 = new Positioning(25,"Vertical","T");
+        Surface surface1 = new Surface(5,3,surfacePositioning1);
 
+        //width of the room
+        Positioning surfacePositioning2 = new Positioning(115,"Vertical","N");
+        Surface surface2 = new Surface(3,3,surfacePositioning2);
+
+        //floor and ceiling
+        Positioning surfacePositioning3 = new Positioning(0,"Horizontal","N");
+        Surface surface3 = new Surface(5,3,surfacePositioning3);
+
+        Furniture furniture = new Furniture("Couch",4,"Black");
+
+        Room room1 = new Room(surface1,surface2,surface3,furniture);
+
+        // Add at least one method to access an object via a getter and then access an object using public method
+        room1.getSurface1().returnDimensions();
+
+        // Add at least one method to hide the object e.g. not using a getter
+        // but to access the object used in composition within the main class
+        Opening opening = new Opening(2,1,2,"Window","Glass");
+        room1.getSurface1().surfaceOpening(opening);
     }
 }
