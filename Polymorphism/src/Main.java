@@ -47,16 +47,16 @@ public class Main {
     public static void main(String[] args){
         System.out.println("Movie 1");
         Money money = new Money("Money");
-        money.highlight(); // Encapsulation allows automatically uses the highlights method in Money class
+        money.highlight(); // Polymorphism allows automatically uses the highlights method in Money class
         System.out.println("_____________________________");
         System.out.println("Movie 2");
         OtherLife otherlife = new OtherLife("OtherLife");
-        otherlife.highlight(); // Encapsulation allows automatically uses the highlights method in OtherLife class
+        otherlife.highlight(); // Polymorphism allows automatically uses the highlights method in OtherLife class
         System.out.println("_____________________________");
         System.out.println("Movie 3");
         Nothing nothing = new Nothing("No movie");
-        nothing.highlight(); // There is no native highlights function in Nothing class. Encapsulation automatically
-        // uses the highlights method in super class Movie.
+        nothing.highlight(); // There is no native highlights function in Nothing class. Polymorphism automatically
+        // allows the highlights method in super class Movie.
 
     }
 }
